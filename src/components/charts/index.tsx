@@ -64,7 +64,7 @@ export const Charts = ({ data }: ChartProps) => {
         <ChartContainer className="min-h-[600px] w-full" config={chartConfig}>
           <LineChart accessibilityLayer data={chartData[0]}>
             <XAxis dataKey="date" />
-            <YAxis dataKey="value" domain={[0, 50]} type="number" />
+            <YAxis dataKey="value" domain={[0, 45]} type="number" />
             <ChartTooltip content={<ChartTooltipContent />} />
             <CartesianGrid vertical={false} />
             <Line dataKey="value" stroke="var(--color-value)" />
@@ -82,7 +82,7 @@ export const Charts = ({ data }: ChartProps) => {
         <ChartContainer className="min-h-[600px] w-full" config={chartConfig}>
           <LineChart accessibilityLayer data={chartData[1]}>
             <XAxis dataKey="date" />
-            <YAxis dataKey="value" domain={[0, 50]} type="number" />
+            <YAxis dataKey="value" domain={[0, 45]} type="number" />
             <ChartTooltip content={<ChartTooltipContent />} />
             <CartesianGrid vertical={false} />
             <Line dataKey="value" stroke="var(--color-value)" />
