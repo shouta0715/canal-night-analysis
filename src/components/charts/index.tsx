@@ -61,7 +61,7 @@ export const Charts = ({ data }: ChartProps) => {
         <p className="mb-4 text-center text-sm text-muted-foreground">
           投稿数合計：{totalOne}個
         </p>
-        <ChartContainer className="min-h-[600px] w-full" config={chartConfig}>
+        <ChartContainer className="min-h-[200px] w-full" config={chartConfig}>
           <LineChart accessibilityLayer data={chartData[0]}>
             <XAxis dataKey="date" />
             <YAxis dataKey="value" domain={[0, 45]} type="number" />
@@ -79,7 +79,7 @@ export const Charts = ({ data }: ChartProps) => {
         <p className="mb-4 text-center text-sm text-muted-foreground">
           投稿数合計：{totalTwo}個
         </p>
-        <ChartContainer className="min-h-[600px] w-full" config={chartConfig}>
+        <ChartContainer className="min-h-[200px] w-full" config={chartConfig}>
           <LineChart accessibilityLayer data={chartData[1]}>
             <XAxis dataKey="date" />
             <YAxis dataKey="value" domain={[0, 45]} type="number" />
